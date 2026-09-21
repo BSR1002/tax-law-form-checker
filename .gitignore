@@ -1,0 +1,7 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+scan_results.json
+scan_state.json
+taxlaw.venv/
