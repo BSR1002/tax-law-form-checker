@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "data_mode": "live",
+  "timezone": "Asia/Seoul",
+  "generated_at": "2026-10-15T03:49:15.938669+00:00",
+  "last_checked_at": null,
+  "last_success_at": null,
+  "history_started_at": null,
+  "history_retention_days": 90,
+  "latest_run": null,
+  "source": "국가법령정보센터 / GitHub Actions",
+  "notice": "시행일자 내림차순의 최신 연혁이며 미래 시행 연혁을 포함할 수 있습니다. 메타데이터 변경은 서식·본문 변경 확정을 뜻하지 않습니다.",
+  "laws": [
+    {
+      "id": "1",
+      "name": "법인세법 시행규칙",
+      "category": "시행규칙",
+      "effective_date": "20260701",
+      "mst": "287787",
+      "status": "unverified",
+      "checked_at": null,
+      "last_success_at": null,
+      "original_url": null
+    },
+    {
+      "id": "2",
+      "name": "소득세법 시행규칙",
+      "category": "시행규칙",
+      "effective_date": "20260701",
+      "mst": "286379",
+      "status": "unverified",
+      "checked_at": null,
+      "last_success_at": null,
+      "original_url": null
+    },
+    {
+      "id": "3",
+      "name": "조세특례제한법 시행규칙",
+      "category": "시행규칙",
+      "effective_date": "20260918",
+      "mst": "289267",
+      "status": "unverified",
+      "checked_at": null,
+      "last_success_at": null,
+      "original_url": null
+    }
+  ],
+  "changes": [],
+  "runs": []
+}
