@@ -2,20 +2,20 @@
   "schema_version": 1,
   "data_mode": "live",
   "timezone": "Asia/Seoul",
-  "generated_at": "2026-10-19T00:21:09.926218+00:00",
-  "last_checked_at": "2026-10-19T00:21:09.926218+00:00",
-  "last_success_at": "2026-10-19T00:21:09.926218+00:00",
+  "generated_at": "2026-10-20T00:24:38.726389+00:00",
+  "last_checked_at": "2026-10-20T00:24:38.726389+00:00",
+  "last_success_at": "2026-10-20T00:24:38.726389+00:00",
   "history_started_at": "2026-10-16T00:19:34.664556+00:00",
   "history_retention_days": 90,
   "latest_run": {
-    "id": "39180361681:1",
-    "checked_at": "2026-10-19T00:21:09.926218+00:00",
+    "id": "39347417669:1",
+    "checked_at": "2026-10-20T00:24:38.726389+00:00",
     "status": "success",
     "result": "no_changes",
     "attempts": 1,
     "changed_count": 0,
     "error_summary": null,
-    "run_url": "https://github.com/BSR1002/tax-law-form-checker/actions/runs/39180361681",
+    "run_url": "https://github.com/BSR1002/tax-law-form-checker/actions/runs/39347417669",
     "issue_url": null
   },
   "source": "국가법령정보센터 / GitHub Actions",
@@ -28,8 +28,8 @@
       "effective_date": "20260701",
       "mst": "287787",
       "status": "unchanged",
-      "checked_at": "2026-10-19T00:21:09.926218+00:00",
-      "last_success_at": "2026-10-19T00:21:09.926218+00:00",
+      "checked_at": "2026-10-20T00:24:38.726389+00:00",
+      "last_success_at": "2026-10-20T00:24:38.726389+00:00",
       "original_url": null
     },
     {
@@ -39,8 +39,8 @@
       "effective_date": "20260701",
       "mst": "286379",
       "status": "unchanged",
-      "checked_at": "2026-10-19T00:21:09.926218+00:00",
-      "last_success_at": "2026-10-19T00:21:09.926218+00:00",
+      "checked_at": "2026-10-20T00:24:38.726389+00:00",
+      "last_success_at": "2026-10-20T00:24:38.726389+00:00",
       "original_url": null
     },
     {
@@ -50,13 +50,24 @@
       "effective_date": "20260918",
       "mst": "289267",
       "status": "unchanged",
-      "checked_at": "2026-10-19T00:21:09.926218+00:00",
-      "last_success_at": "2026-10-19T00:21:09.926218+00:00",
+      "checked_at": "2026-10-20T00:24:38.726389+00:00",
+      "last_success_at": "2026-10-20T00:24:38.726389+00:00",
       "original_url": null
     }
   ],
   "changes": [],
   "runs": [
+    {
+      "id": "39347417669:1",
+      "checked_at": "2026-10-20T00:24:38.726389+00:00",
+      "status": "success",
+      "result": "no_changes",
+      "attempts": 1,
+      "changed_count": 0,
+      "error_summary": null,
+      "run_url": "https://github.com/BSR1002/tax-law-form-checker/actions/runs/39347417669",
+      "issue_url": null
+    },
     {
       "id": "39180361681:1",
       "checked_at": "2026-10-19T00:21:09.926218+00:00",
