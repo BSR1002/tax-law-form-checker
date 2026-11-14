@@ -8,7 +8,7 @@ import tempfile
 from datetime import datetime, timezone
 from io import BytesIO
 from pathlib import Path
-from urllib.parse import urljoin
+from urllib.parse import urljoin, urlsplit
 
 import requests
 from dotenv import load_dotenv
@@ -39,6 +39,12 @@ class LawClient:
     def api(self, endpoint, **params):
         r = self.session.get(BASE + "/DRF/" + endpoint,
             params={"OC": self.oc, "target": "eflaw", "type": "JSON", **params}, timeout=30)
+        destination = urlsplit(r.url)
+        if (destination.hostname in {"law.go.kr", "www.law.go.kr", "open.law.go.kr"}
+                and destination.path == "/sorry/sorry.html"):
+            message = "국가법령정보센터 시스템 점검 페이지가 반환되었습니다. 점검 종료 후 다시 확인하세요."
+            print("::warning::" + message if os.getenv("GITHUB_ACTIONS") == "true" else message, flush=True)
+            raise RuntimeError(message)
         r.raise_for_status()
         return r.json()
 
