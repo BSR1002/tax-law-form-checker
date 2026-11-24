@@ -1,0 +1,47 @@
+name: Corporate local income tax forms
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 22 * * *'
+  push:
+    branches: [main]
+    paths: ['local_tax_monitor.py', 'test_local_tax_monitor.py', '.github/workflows/local-tax-monitor.yml']
+permissions:
+  contents: write
+concurrency:
+  group: daily-law-monitor
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - run: python -m unittest -v test_local_tax_monitor test_law_monitor test_dashboard_monitor test_scanner
+      - name: Verify selected corporate local income tax forms
+        id: verify
+        continue-on-error: true
+        env:
+          LAW_OC: ${{ secrets.LAW_OC }}
+        run: python local_tax_monitor.py
+      - name: Publish verified data or failure details
+        if: always()
+        run: |
+          if [ ! -f public/local-tax-monitoring.json ]; then exit 0; fi
+          git add -- public/local-tax-monitoring.json
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Update corporate local income tax form verification'
+          git pull --rebase origin main
+          git push
+      - name: Preserve verification failure
+        if: always() && steps.verify.outcome == 'failure'
+        run: exit 1

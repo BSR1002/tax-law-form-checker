@@ -283,7 +283,26 @@ def render_result(data):
 def main():
     st.set_page_config(page_title="법령서식 변경감지", layout="wide")
     st.title("법령서식 Scanner / Comparator")
-    source = st.sidebar.radio("결과 선택", ["저장된 결과 (읽기 전용)", "법령·버전 선택 후 실행"], key="result_source", on_change=clear_result)
+    source = st.sidebar.radio("결과 선택", ["저장된 결과 (읽기 전용)", "법령·버전 선택 후 실행", "법인지방소득세 신고서식"], key="result_source", on_change=clear_result)
+    if source == "법인지방소득세 신고서식":
+        st.subheader("법인지방소득세 신고서식")
+        st.caption("일반 법인 확정신고 및 조건별 첨부서식 11종 · 서식 개정일 2026-05-01부터 확인")
+        try:
+            local = json.loads((Path(__file__).parent / "public/local-tax-monitoring.json").read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            st.warning("지방세 검증 데이터가 없습니다. GitHub의 Corporate local income tax forms 실행 결과를 확인하세요.")
+            return
+        st.write("마지막 조회", local.get("checked_at"), "마지막 정상 조회", local.get("last_success_at"))
+        if local.get("status") != "success":
+            st.warning("조회 또는 일부 서식 확인이 완료되지 않았습니다. 확인 필요 항목을 확인하세요.")
+        rev = local.get("current", {})
+        st.caption(f"지방세법 시행규칙 · 시행 {rev.get('effective_date', '-')} · MST {rev.get('mst', '-')}")
+        labels = {"revised_since_cutoff": "기준일 이후 개정", "before_cutoff": "기준일 이전 서식", "review_required": "확인 필요"}
+        st.dataframe([{"서식": row.get("title", row["id"]), "개정일": row.get("revision_date"), "결과": labels.get(row["status"], row["status"]), "오류 단계": row.get("failed_stage", "")} for row in local.get("forms", [])], use_container_width=True)
+        for row in local.get("forms", []):
+            if row.get("pdf_url"):
+                st.link_button(row.get("title", row["id"]) + " 원문", row["pdf_url"])
+        return
     if source == "저장된 결과 (읽기 전용)":
         try:
             data = json.loads(RESULT_PATH.read_text(encoding="utf-8"))
