@@ -41,13 +41,13 @@
     },
     {
       "id": "0043:04",
-      "status": "before_cutoff",
-      "revision_date": "2022-06-07",
+      "status": "review_required",
+      "revision_date": null,
       "title": "법인지방소득세 가산세액계산서",
       "number": "0043",
       "branch_number": "04",
-      "pdf_url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=164921031",
-      "hwp_url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=164921029"
+      "failed_stage": "current_pdf",
+      "error_type": "HTTPError"
     },
     {
       "id": "0043:05",
@@ -61,13 +61,13 @@
     },
     {
       "id": "0043:09",
-      "status": "review_required",
-      "revision_date": null,
+      "status": "before_cutoff",
+      "revision_date": "2022-03-31",
       "title": "소급공제 법인지방소득세액 환급신청서",
       "number": "0043",
       "branch_number": "09",
-      "failed_stage": "current_pdf",
-      "error_type": "HTTPError"
+      "pdf_url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=164921091",
+      "hwp_url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=164921089"
     },
     {
       "id": "0043:10",
@@ -81,13 +81,13 @@
     },
     {
       "id": "0043:12",
-      "status": "before_cutoff",
-      "revision_date": "2022-03-31",
+      "status": "review_required",
+      "revision_date": null,
       "title": "사실과 다른 회계처리로 인하여 과다 납부한 세액의 차감액 명세서",
       "number": "0043",
       "branch_number": "12",
-      "pdf_url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=164921115",
-      "hwp_url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=164921113"
+      "failed_stage": "current_pdf",
+      "error_type": "HTTPError"
     },
     {
       "id": "0043:13",
@@ -111,18 +111,18 @@
     },
     {
       "id": "0044:06",
-      "status": "review_required",
-      "revision_date": null,
+      "status": "before_cutoff",
+      "revision_date": "2025-04-30",
       "title": "법인지방소득세 안분명세서",
       "number": "0044",
       "branch_number": "06",
-      "failed_stage": "current_pdf",
-      "error_type": "HTTPError"
+      "pdf_url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=164921181",
+      "hwp_url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=164921179"
     }
   ],
   "status": "partial",
   "changed_count": null,
-  "checked_at": "2026-11-25T04:59:24.170784+00:00",
+  "checked_at": "2026-11-25T05:01:40.098592+00:00",
   "last_success_at": "2026-11-24T14:53:05.511619+00:00",
   "last_successful_data": {
     "schema_version": 1,
