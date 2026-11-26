@@ -41,13 +41,13 @@
     },
     {
       "id": "0043:04",
-      "status": "review_required",
-      "revision_date": null,
+      "status": "before_cutoff",
+      "revision_date": "2022-06-07",
       "title": "법인지방소득세 가산세액계산서",
       "number": "0043",
       "branch_number": "04",
-      "failed_stage": "current_pdf",
-      "error_type": "HTTPError"
+      "pdf_url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=164921031",
+      "hwp_url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=164921029"
     },
     {
       "id": "0043:05",
@@ -81,13 +81,13 @@
     },
     {
       "id": "0043:12",
-      "status": "review_required",
-      "revision_date": null,
+      "status": "before_cutoff",
+      "revision_date": "2022-03-31",
       "title": "사실과 다른 회계처리로 인하여 과다 납부한 세액의 차감액 명세서",
       "number": "0043",
       "branch_number": "12",
-      "failed_stage": "current_pdf",
-      "error_type": "HTTPError"
+      "pdf_url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=164921115",
+      "hwp_url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=164921113"
     },
     {
       "id": "0043:13",
@@ -120,138 +120,10 @@
       "hwp_url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=164921179"
     }
   ],
-  "status": "partial",
-  "changed_count": null,
-  "checked_at": "2026-11-25T05:01:40.098592+00:00",
-  "last_success_at": "2026-11-24T14:53:05.511619+00:00",
-  "last_successful_data": {
-    "schema_version": 1,
-    "law_name": "지방세법 시행규칙",
-    "since": "2026-05-01",
-    "date_basis": "서식 PDF 머리말의 개정·신설일 (기준일 포함)",
-    "scope": "제48조의4 일반 법인 확정신고 및 조건별 첨부서식 11종",
-    "current": {
-      "mst": "287031",
-      "effective_date": "20260701"
-    },
-    "forms": [
-      {
-        "id": "0043:00",
-        "status": "before_cutoff",
-        "revision_date": "2025-04-30",
-        "title": "법인지방소득세 과세표준 및 세액신고서",
-        "number": "0043",
-        "branch_number": "00",
-        "pdf_url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=164921007",
-        "hwp_url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=164921005"
-      },
-      {
-        "id": "0043:02",
-        "status": "before_cutoff",
-        "revision_date": "2025-12-31",
-        "title": "법인지방소득세 과세표준 및 세액조정계산서",
-        "number": "0043",
-        "branch_number": "02",
-        "pdf_url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=164921015",
-        "hwp_url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=164921013"
-      },
-      {
-        "id": "0043:03",
-        "status": "before_cutoff",
-        "revision_date": "2019-05-31",
-        "title": "공제(감면)세액 및 추가납부세액합계표",
-        "number": "0043",
-        "branch_number": "03",
-        "pdf_url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=164921023",
-        "hwp_url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=164921021"
-      },
-      {
-        "id": "0043:04",
-        "status": "before_cutoff",
-        "revision_date": "2022-06-07",
-        "title": "법인지방소득세 가산세액계산서",
-        "number": "0043",
-        "branch_number": "04",
-        "pdf_url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=164921031",
-        "hwp_url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=164921029"
-      },
-      {
-        "id": "0043:05",
-        "status": "before_cutoff",
-        "revision_date": "2016-12-30",
-        "title": "법인지방소득세 특별징수세액명세서, 연결법인의 법인지방소득세 특별징수세액명세서",
-        "number": "0043",
-        "branch_number": "05",
-        "pdf_url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=164921039",
-        "hwp_url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=164921037"
-      },
-      {
-        "id": "0043:09",
-        "status": "before_cutoff",
-        "revision_date": "2022-03-31",
-        "title": "소급공제 법인지방소득세액 환급신청서",
-        "number": "0043",
-        "branch_number": "09",
-        "pdf_url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=164921091",
-        "hwp_url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=164921089"
-      },
-      {
-        "id": "0043:10",
-        "status": "before_cutoff",
-        "revision_date": "2022-03-31",
-        "title": "소급공제 법인지방소득세액 환급특례신청서(내국법인)",
-        "number": "0043",
-        "branch_number": "10",
-        "pdf_url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=164921099",
-        "hwp_url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=164921097"
-      },
-      {
-        "id": "0043:12",
-        "status": "before_cutoff",
-        "revision_date": "2022-03-31",
-        "title": "사실과 다른 회계처리로 인하여 과다 납부한 세액의 차감액 명세서",
-        "number": "0043",
-        "branch_number": "12",
-        "pdf_url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=164921115",
-        "hwp_url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=164921113"
-      },
-      {
-        "id": "0043:13",
-        "status": "before_cutoff",
-        "revision_date": "2025-12-31",
-        "title": "외국법인세액 등 과세표준 차감 명세서",
-        "number": "0043",
-        "branch_number": "13",
-        "pdf_url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=164921121",
-        "hwp_url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=164921119"
-      },
-      {
-        "id": "0043:14",
-        "status": "before_cutoff",
-        "revision_date": "2023-03-28",
-        "title": "재해손실세액 차감신청서",
-        "number": "0043",
-        "branch_number": "14",
-        "pdf_url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=164921129",
-        "hwp_url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=164921127"
-      },
-      {
-        "id": "0044:06",
-        "status": "before_cutoff",
-        "revision_date": "2025-04-30",
-        "title": "법인지방소득세 안분명세서",
-        "number": "0044",
-        "branch_number": "06",
-        "pdf_url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=164921181",
-        "hwp_url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=164921179"
-      }
-    ],
-    "status": "success",
-    "changed_count": 0,
-    "checked_at": "2026-11-24T14:53:05.511619+00:00",
-    "last_success_at": "2026-11-24T14:53:05.511619+00:00",
-    "last_successful_data": null,
-    "run_url": "https://github.com/BSR1002/tax-law-form-checker/actions/runs/45419001684"
-  },
-  "run_url": "https://github.com/BSR1002/tax-law-form-checker/actions/runs/45550407624"
+  "status": "success",
+  "changed_count": 0,
+  "checked_at": "2026-11-26T04:16:50.126208+00:00",
+  "last_success_at": "2026-11-26T04:16:50.126208+00:00",
+  "last_successful_data": null,
+  "run_url": "https://github.com/BSR1002/tax-law-form-checker/actions/runs/45754160670"
 }
