@@ -122,8 +122,8 @@
   ],
   "status": "success",
   "changed_count": 0,
-  "checked_at": "2026-11-26T04:16:50.126208+00:00",
-  "last_success_at": "2026-11-26T04:16:50.126208+00:00",
+  "checked_at": "2026-11-27T04:26:31.225669+00:00",
+  "last_success_at": "2026-11-27T04:26:31.225669+00:00",
   "last_successful_data": null,
-  "run_url": "https://github.com/BSR1002/tax-law-form-checker/actions/runs/45754160670"
+  "run_url": "https://github.com/BSR1002/tax-law-form-checker/actions/runs/45939920126"
 }
